@@ -1,0 +1,15 @@
+# Compilation output
+dist/
+
+# node modules
+node_modules/
+
+# code editor conf
+.vscode/
+
+# env conf
+.env
+
+# TS cache
+*.tsbuildinfo
+

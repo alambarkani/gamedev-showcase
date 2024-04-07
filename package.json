@@ -1,0 +1,32 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && npx tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "predev": "npm run build",
+    "dev": "concurrently \"tsc -w\" \"nodemon -q dist/index.js\""
+  },
+  "keywords": [
+    "Game Dev"
+  ],
+  "author": "Alam Barkani",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/hbs": "^4.0.4",
+    "@types/node": "^20.12.5",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "hbs": "^4.2.0"
+  }
+}
